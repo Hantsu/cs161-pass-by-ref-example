@@ -1,0 +1,44 @@
+/******************************************************************************
+
+filename:           ip13 - inClassProgramming
+author:             Max T.  Max T.  Max T.  Max T.  Max T.  Max T.  Max T.
+date:               2/19/19  2/19/19  2/19/19  2/19/19  2/19/19  2/19/19
+goal:               Get two numbers from user, computer product
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+void get2nums(int&, int&);
+void computeProd(int, int, int&);
+void showResult(int, int, int);
+int main()
+{
+    int num1, num2;
+    int product;
+    
+    get2nums(num1, num2);
+    computeProd(num1, num2, product);
+    showResult(num1, num2, product);
+    
+    return 0;
+}
+
+void get2nums(int& n1, int& n2){
+    cout << "Enter two integers, seperated by a space";
+    cin >> n1 >> n2;
+}
+
+void computeProd(int n1, int n2, int& ans){
+    ans = n1 * n2;
+    return;
+}
+
+void showResult(int n1, int n2, int ans){
+    cout << n1 << " * " << n2 << " = " << ans << endl;
+    return;
+}
+
+
+
+
+
